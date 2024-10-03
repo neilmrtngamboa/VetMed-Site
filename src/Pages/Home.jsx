@@ -1,5 +1,17 @@
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Home() {
+
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
 
     return (
         <main>
@@ -104,7 +116,7 @@ function Home() {
                         </div>
 
                         <div>
-                            <hr className="border-blue-600"/>
+                            <hr className="border-blue-600" />
                             <h4 className="font-semibold text-4xl mt-5">Honest Help</h4>
                             <p className="mt-4">We are honest and open with our clients about their pet's situation, involving them in the decision-making process.</p>
 
@@ -122,7 +134,35 @@ function Home() {
 
             </section>
 
-            <section className="bg-blue-400 p-5">
+            <section className="bg-blue-400 lg:p-20 p-10">
+
+                <h5 className="font-bold text-center text-4xl">Hear from our clients!</h5>
+
+                <Slider {...settings} className="mt-10">
+                    <div>
+                        <svg className="w-8 h-8 mb-4 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                            <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                        </svg>
+                        <p className="font-semibold lg:text-2xl text-lg text-center">I've been going here for over 10 years (with some time in between) and I always am satisfied with the care my baby and I receive. Thanks BAHR for all you ladies and gents do.</p>
+                        <p className="font-extrabold lg:text-2xl text-lg text-center my-4">Joselu R.</p>
+                    </div>
+
+                    <div>
+                    <svg className="w-8 h-8 mb-4 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                            <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                        </svg>
+                        <p className="font-semibold lg:text-2xl text-lg text-center">I can vouch for the level of professionalism and courtesy of this veterinarian practice. Special shout out to Samantha for answering all my questions over the phone and going above and beyond for customers!</p>
+                        <p className="font-extrabold lg:text-2xl text-lg text-center my-4">Joselu R.</p>
+                    </div>
+
+                    <div>
+                    <svg className="w-8 h-8 mb-4 mx-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                            <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                        </svg>
+                        <p className="font-semibold lg:text-2xl text-lg text-center">Dr. Quack is simply the best. He and Sherry made my visit so smooth and pleasant. Not the typical outcome for a vet visit. He took the time to talk to me through every possible outcome of my pet’s situation. So thoughtful and so attentive</p>
+                        <p className="font-extrabold lg:text-2xl text-lg text-center my-4">Joselu R.</p>
+                    </div>
+                </Slider>
 
             </section>
 
